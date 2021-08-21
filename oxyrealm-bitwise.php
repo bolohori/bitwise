@@ -6,7 +6,7 @@
  * Plugin Name:         Oxyrealm Bitwise
  * Plugin URI:          https://bitwise.oxyrealm.com
  * Description:         Oxygen Builder tweak
- * Version:             1.0.0
+ * Version:             1.0.1
  * Requires at least:   5.6
  * Tested up to:        5.8
  * Requires PHP:        7.4
@@ -20,16 +20,16 @@
  * @link                https://oxyrealm.com
  * @since               1.0.0
  * @copyright           2021 oxyrealm.com
- * @version             1.0.0
+ * @version             1.0.1
  */
 
 namespace Oxyrealm\Modules\Bitwise;
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'OXYREALM_BITWISE_VERSION', '1.0.0' );
+define( 'OXYREALM_BITWISE_VERSION', '1.0.1' );
 define( 'OXYREALM_BITWISE_DB_VERSION', '001' );
-define( 'OXYREALM_BITWISE_AETHER_MINIMUM_VERSION', '1.1.16' );
+define( 'OXYREALM_BITWISE_AETHER_MINIMUM_VERSION', '1.1.17' );
 
 define( 'OXYREALM_BITWISE_FILE', __FILE__ );
 define( 'OXYREALM_BITWISE_PATH', dirname( OXYREALM_BITWISE_FILE ) );

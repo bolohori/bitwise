@@ -5,7 +5,7 @@ Donate link: https://go.oxyrealm.com/donate
 Tags: oxygen builder, bitwise
 Requires at least: 5.6
 Tested up to: 5.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 7.4
 
 Oxygen Builder tweak
@@ -34,6 +34,13 @@ Please [read documentation](https://go.oxyrealm.com/documentation) on Oxyrealm w
 == Changelog ==
 
 For more information, see [Releases](https://go.oxyrealm.com/changelog).
+
+= 1.0.1 =
+
+Release Date:
+
+* [WP-CLI] New command: $ wp oxygen-builder setting css-cache
+* [WP-CLI] New command: $ wp oxygen-builder setting sign-shortcode <post-type>...
 
 = 1.0.0 =
 
