@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "598fe1c1b29d2862d0c42cfff7fb0302",
+    "content-hash": "4cab59a86d38636e713192a73adbcca4",
     "packages": [
         {
             "name": "oxyrealm/loader",

@@ -42,7 +42,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 use Oxyrealm\Aether\Assets;
 use Oxyrealm\Aether\Utils;
 use Oxyrealm\Aether\Utils\Migration;
-use Oxyrealm\Aether\Utils\Notice;
 use Oxyrealm\Aether\Utils\Oxygen;
 use Oxyrealm\Loader\Aether;
 use Oxyrealm\Loader\Update;
@@ -67,6 +66,8 @@ class Bitwise extends Aether {
 		register_deactivation_hook( OXYREALM_BITWISE_FILE, [ $this, 'plugin_deactivate' ] );
 
 		add_action( 'plugins_loaded', [ $this, 'init_plugin' ], 100 );
+
+		new Command;
 	}
 
 	public static function run( $module_id ) {
