@@ -1,0 +1,52 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "598fe1c1b29d2862d0c42cfff7fb0302",
+    "packages": [
+        {
+            "name": "oxyrealm/loader",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oxyrealm/loader.git",
+                "reference": "aff3f723ac3beef8ad5ff0aaebc5dded6b356e5c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oxyrealm/loader/zipball/aff3f723ac3beef8ad5ff0aaebc5dded6b356e5c",
+                "reference": "aff3f723ac3beef8ad5ff0aaebc5dded6b356e5c",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Oxyrealm\\Loader\\": "src"
+                }
+            },
+            "authors": [
+                {
+                    "name": "oxyrealm",
+                    "email": "hello@oxyrealm.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/oxyrealm/loader/tree/master",
+                "issues": "https://github.com/oxyrealm/loader/issues"
+            },
+            "time": "2021-07-24T17:16:48+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.1.0"
+}
