@@ -1,10 +1,11 @@
 <p align="center">
 <a href="https://github.com/oxyrealm/bitwise"><h1>Oxyrealm Bitwise</h1></a></p>
 
-<p align="center">
-<img alt="Amount of downloads" src="https://img.shields.io/github/downloads/oxyrealm/bitwise/total">
-<img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/oxyrealm/bitwise">
-</p>
+
+[![Sponsor](https://img.shields.io/static/v1?logo=paypal&label=PayPal&message=donate)](https://paypal.me/joshuasiagian)
+[![Amount of downloads](https://img.shields.io/github/downloads/oxyrealm/bitwise/total)](https://github.com/oxyrealm/bitwise/releases/latest)
+[![GitHub release (latest by date)](https://img.shields.io/github/v/release/oxyrealm/bitwise)](https://github.com/oxyrealm/bitwise/releases/latest)
+
 
 Oxygen Builder tweak.
 
@@ -27,4 +28,23 @@ If you have a copy of the plugin as a zip file, you can manually upload it and i
 5. When installation is complete, you’ll see “Plugin installed successfully.” Click the **Activate Plugin** button at the bottom of the page.
 
 Please read the [official documentation](https://wordpress.org/support/article/managing-plugins/#manual-upload-via-wordpress-admin) for plugin installation instructions.
+
+## Documentation
+
+WIP
+
+## Changelog
+
+```
+= unreleased = 
+
+* [wp-admin] Enhancement: Export/Import Oxygen Options admin page using JSON Editor (https://github.com/josdejong/jsoneditor)
+
+= 1.0.1 =
+
+Release Date:
+
+* [WP-CLI] New command: $ wp oxygen-builder setting css-cache
+* [WP-CLI] New command: $ wp oxygen-builder setting sign-shortcode <post-type>...
+```
 
