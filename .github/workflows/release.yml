@@ -35,10 +35,10 @@ jobs:
           run_install: true
           
       - name: Compile assets
-        run: pnpm run build
+        run: pnpm run production
 
       - name: Clean dev files
-        run: rm -rf .git* assets/ node_modules/ package.json pnpm-lock.yaml postcss.config.js composer.lock composer.json .wordpress-org .distignore .npmrc
+        run: rm -rf .git* assets/ node_modules/ package.json pnpm-lock.yaml composer.lock composer.json .wordpress-org .distignore .npmrc
 
       - name: Move files to subfolder
         run: mkdir zip-temp && ls | grep -v zip-temp | xargs mv -t zip-temp

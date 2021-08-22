@@ -1,33 +1,12 @@
 {
-	"scripts": {
-		"build:css": "postcss assets/css/editor.scss --output dist/editor.css --verbose",
-		"build:js": "esbuild assets/js/editor.js --outfile=dist/editor.js --bundle --minify --define:process.env.NODE_ENV=\\\"production\\\"",
-		"build": "pnpm run build:js && pnpm run build:css",
-		"local:css": "postcss assets/css/editor.scss --output dist/editor.css --map --verbose",
-		"local:js": "esbuild assets/js/editor.js --outfile=dist/editor.js --bundle --sourcemap",
-		"local": "pnpm run local:js && pnpm run local:css",
-		"watch:css": "postcss assets/css/editor.scss --output dist/editor.css --map --verbose --watch",
-		"watch:js": "esbuild assets/js/editor.js --outfile=dist/editor.js --bundle --sourcemap --watch",
-		"watch": "pnpm run watch:js & pnpm run watch:css"
-	},
-	"dependencies": {
-		"axios": "^0.21.1",
-		"js-base64": "^3.6.1",
-		"lodash.clone": "^4.5.0",
-		"lodash.debounce": "^4.0.8",
-		"rfc6902": "^4.0.2"
-	},
-	"devDependencies": {
-		"autoprefixer": "^10.3.1",
-		"cssnano": "^5.0.7",
-		"esbuild": "^0.12.19",
-		"postcss": "^8.3.6",
-		"postcss-advanced-variables": "^3.0.1",
-		"postcss-cli": "^8.3.1",
-		"postcss-nested": "^5.0.6",
-		"postcss-scss": "^4.0.0"
-	},
-	"browser": {
-		"path": "path-browserify"
-	}
+  "scripts": {
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production"
+  },
+  "devDependencies": {
+    "laravel-mix": "^6.0.28"
+  }
 }

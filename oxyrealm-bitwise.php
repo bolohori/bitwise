@@ -51,6 +51,8 @@ class Bitwise extends Aether {
 	/** @var Update */
 	public $skynet;
 
+	public $module_id;
+
 	public function __construct( $module_id ) {
 		parent::__construct( $module_id );
 
@@ -81,8 +83,9 @@ class Bitwise extends Aether {
 	}
 
 	public function init_plugin() {
-		Assets::register_script( "{$this->module_id}-editor", OXYREALM_BITWISE_URL . '/dist/editor.js', [], OXYREALM_BITWISE_VERSION, true );
-		Assets::register_style( "{$this->module_id}-editor", OXYREALM_BITWISE_URL . '/dist/editor.css', [], OXYREALM_BITWISE_VERSION );
+		Assets::register_script( "{$this->module_id}-manifest", OXYREALM_BITWISE_ASSETS . '/js/manifest.js', [], OXYREALM_BITWISE_VERSION, true );
+		Assets::register_script( "{$this->module_id}-vendor", OXYREALM_BITWISE_ASSETS . '/js/vendor.js', ["{$this->module_id}-manifest"], OXYREALM_BITWISE_VERSION, true );
+		// Assets::register_style( "{$this->module_id}-style", OXYREALM_BITWISE_ASSETS . '/css/style.css', [], OXYREALM_BITWISE_VERSION );
 
 		add_action( 'init', [ $this, 'boot' ] );
 	}
@@ -165,3 +168,8 @@ class Bitwise extends Aether {
 }
 
 $aether_m_bitwise = Bitwise::run( 'aether_m_bitwise' );
+
+function aether_m_bitwise() {
+	global $aether_m_bitwise;
+	return $aether_m_bitwise;
+}
