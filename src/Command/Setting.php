@@ -90,13 +90,13 @@ class Setting
         $oxygen_signature = new \OXYGEN_VSB_Signature();
 
         $posts = get_posts(
-            array(
+            [
                 'post_type' => $args,
                 'numberposts' => -1,
                 'orderby' => 'ID',
                 'order' => 'ASC',
                 'meta_key' => 'ct_builder_shortcodes',
-            )
+            ]
         );
 
         foreach ($posts as $post) {

@@ -35,7 +35,7 @@ define( 'OXYREALM_BITWISE_FILE', __FILE__ );
 define( 'OXYREALM_BITWISE_PATH', dirname( OXYREALM_BITWISE_FILE ) );
 define( 'OXYREALM_BITWISE_MIGRATION_PATH', OXYREALM_BITWISE_PATH . '/database/migrations/' );
 define( 'OXYREALM_BITWISE_URL', plugins_url( '', OXYREALM_BITWISE_FILE ) );
-define( 'OXYREALM_BITWISE_ASSETS', OXYREALM_BITWISE_URL . '/public' );
+define( 'OXYREALM_BITWISE_ASSETS', OXYREALM_BITWISE_URL . '/dist' );
 
 require_once __DIR__ . '/vendor/autoload.php';
 

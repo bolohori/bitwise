@@ -5,6 +5,7 @@ namespace Oxyrealm\Modules\Bitwise;
 use Oxyrealm\Aether\Admin as AetherAdmin;
 use Oxyrealm\Aether\Utils\Notice;
 use Oxyrealm\Loader\Update;
+use Oxyrealm\Modules\Bitwise\Admin\ExportImport;
 
 class Admin {
 	private $module_id;
@@ -13,6 +14,8 @@ class Admin {
 		$this->module_id = $module_id;
 
 		add_action( 'admin_menu', [ $this, 'admin_menu' ], 100 );
+
+		new ExportImport;
 	}
 
 	public function admin_menu(): void {
